@@ -1,0 +1,49 @@
+# kalkulator.py
+
+import sys
+
+def dodawanie(a, b):
+    return a + b
+
+def odejmowanie(a, b):
+    return a - b
+
+def mnozenie(a, b):
+    return a * b
+
+def dzielenie(a, b):
+    if b == 0:
+        print("Nie można dzielić przez zero.")
+        sys.exit(1)
+    return a / b
+
+def potegowanie(a, b):
+    return a ** b
+
+def main():
+    if len(sys.argv) != 4:
+        print("Użycie: python kalkulator.py <liczba1> <operator> <liczba2>")
+        sys.exit(1)
+
+    a = float(sys.argv[1])
+    operator = sys.argv[2]
+    b = float(sys.argv[3])
+
+    if operator == "+":
+        wynik = dodawanie(a, b)
+    elif operator == "-":
+        wynik = odejmowanie(a, b)
+    elif operator == "*":
+        wynik = mnozenie(a, b)
+    elif operator == "/":
+        wynik = dzielenie(a, b)
+    elif operator == "^":
+        wynik = potegowanie(a, b)
+    else:
+        print("Niepoprawny operator. Dostępne operatory: +, -, *, /, ^")
+        sys.exit(1)
+
+    print("Wynik:", wynik)
+
+if __name__ == "__main__":
+    main()
