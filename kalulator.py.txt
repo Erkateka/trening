@@ -1,26 +1,26 @@
-print('...:::KALKULATOR:::...')
+print("...:::KALKULATOR:::...")
 
 def poczatek():
-    print('1 - dzialania')
-    print('2 - info')
-    print('3 - autor')
-    print('4 - powrot')
-    print('5 - wyjscie')
+    print("1 - dzialania")
+    print("2 - info")
+    print("3 - autor")
+    print("4 - powrot")
+    print("5 - wyjscie")
 
 def dzialania():
-    print('1 - dodawanie')
-    print('2 - odejmowanie')
-    print('3 - mnozenie')
-    print('4 - dzielenie')
-    print('5 - potegowanie')
-    print('6 - powrot')
+    print("1 - dodawanie")
+    print("2 - odejmowanie")
+    print("3 - mnozenie")
+    print("4 - dzielenie")
+    print("5 - potegowanie")
+    print("6 - powrot")
 
 def info():
-    print('\nProsty kalkulator\n')
+    print("\nProsty kalkulator\n")
     powrot()
 
 def autor():
-    print('\nja\n')
+    print("\nja\n")
     powrot()
 
 def powrot():
@@ -33,66 +33,66 @@ def dodawanie():
     a = input("Pierwsza liczba: ")
     b = input("Druga liczba: ")
     wynik = float(a) + float(b)
-    print('Wynik: ', wynik)
+    print("Wynik: ", wynik)
 
 def odejmowanie():
     a = input("Pierwsza liczba: ")
     b = input("Druga liczba: ")
     wynik = float(a) - float(b)
-    print('Wynik: ', wynik)
+    print("Wynik: ", wynik)
 
 def mnozenie():
     a = input("Pierwsza liczba: ")
     b = input("Druga liczba: ")
     wynik = float(a) * float(b)
-    print('Wynik: ', wynik)
+    print("Wynik: ", wynik)
 
 def dzielenie():
     a = input("Pierwsza liczba: ")
     b = input("Druga liczba: ")
     try:
         wynik = float(a) / float(b)
-        print('Wynik: ', wynik)
+        print("Wynik: ", wynik)
     except ZeroDivisionError:
-        print('Nie można dzielić przez zero.')
+        print("Nie można dzielić przez zero.")
 
 def potegowanie():
     a = input("Podstawa potęgi: ")
     b = input("Wykładnik potęgi: ")
     wynik = float(a) ** float(b)
-    print('Wynik: ', wynik)
+    print("Wynik: ", wynik)
 
 def drugieMenu():
     dzialania()
     operacja = input("Co wybierasz? ")
     while operacja != "6":
-        if operacja == '1':
+        if operacja == "1":
             dodawanie()
-        elif operacja == '2':
+        elif operacja == "2":
             odejmowanie()
-        elif operacja == '3':
+        elif operacja == "3":
             mnozenie()
-        elif operacja == '4':
+        elif operacja == "4":
             dzielenie()
-        elif operacja == '5':
+        elif operacja == "5":
             potegowanie()
-        elif operacja == '6':
+        elif operacja == "6":
             powrot()
         else:
-            print('\nError\n')
+            print("\nError\n")
         operacja = input("Co wybierasz? ")
 
 poczatek()
 operacja = input("Co wybierasz? ")
 while operacja != "5":
-    if operacja == '1':
+    if operacja == "1":
         drugieMenu()
-    elif operacja == '2':
+    elif operacja == "2":
         info()
-    elif operacja == '3':
+    elif operacja == "3":
         autor()
-    elif operacja == '4':
+    elif operacja == "4":
         powrot()
-    elif operacja == '5':
+    elif operacja == "5":
         wyjscie()
     operacja = input("Co wybierzesz? ")
