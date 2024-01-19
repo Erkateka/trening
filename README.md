@@ -23,5 +23,5 @@ Projekt kalkulatora w Pythonie. Pozwala na podstawowe operacje matematyczne, tak
 Skopiuj repozytorium na swój lokalny komputer:
 
 ```bash
-git clone https://github.com/twoja_nazwa_uzytkownika/prosty-kalkulator.git
+git clone https://github.com/Erkateka/trening/
 cd prosty-kalkulator
