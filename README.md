@@ -24,4 +24,4 @@ Skopiuj repozytorium na swój lokalny komputer:
 
 ```bash
 git clone https://github.com/Erkateka/trening/
-cd prosty-kalkulator
+cd trening
